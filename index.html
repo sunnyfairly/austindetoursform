@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Form</title>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="javascripts/exampleform.js">
+	</script>
+</head>
+<body>
+	<header class="pageTopper">
+		<div>
+			<h1 class="pageTitle">Austin Detours: Trip Sheet Creator</h1>
+		</div>
+	</header>
+	<form name="myForm" class="formDiv"action="javascript: validateForm();" onsubmit="return validateForm()" method="post">
+	<div class="form1">
+			File:<br>
+			<input type="text" class="inputBox" name="FileNameHere" placeholder="File Name Here..." autofocus>
+			<br><br>
+			Date:<br>
+			<input type="text" class="inputBox" name="Date" placeholder="Date of Tour Here...">
+			<br><br>
+			Client's Name:<br>
+			<input type="text" class="inputBox" name="Client's Name" placeholder="Client Name Here...">
+			<br><br>
+			# of Guests:<br>
+			<input type="text" class="inputBox" name="Guest Count" placeholder="Number of Guests Here...">
+			<br><br>
+			Contact Person:<br>
+			<input type="text" class="inputBox" name="Contact Person" placeholder="Client Contact Info Here...">
+			<br><br>
+			Tour Name:<br>
+			<input type="text" class="inputBox" name="Tour Type" placeholder="Type Of Tour Here...">
+			<br><br>
+			Guides:<br>
+			<input type="text" class="inputBox" name="Guide Name" placeholder="Guide Name Here...">
+			<br><br>
+			AD Contact:<br>
+			<input type="text" class="inputBox" name="AD Contact" placeholder="AD Contact Person Here...">
+			<br><br>
+			Transportation:<br>
+			<input type="text" class="inputBox" name="Transportation" placeholder="Transportation Info Here...">
+			<br><br>
+			Pick Up Location:<br>
+			<input type="text" class="inputBox" name="Location" placeholder="Location Here...">
+	</div>
+	<div class="form2">
+			<p>First Stop:</p>
+			<input type="time" class="inputBox" name="1stTime" placeholder="1st Time">
+			<input type="time" class="inputBox" name="end1stTime" placeholder="1st Time">
+			<input type="text" class="inputBox" name="1stDetail" placeholder="1st Objective">
+			<br><br>
+
+			<p>Second Stop:</p>
+			<input type="time" class="inputBox" name="2ndTime" placeholder="2nd Time">
+			<input type="time" class="inputBox" name="end2ndTime" placeholder="2nd Time">
+			<input type="text" class="inputBox" name="2ndDetail" placeholder="2nd Objective">
+			<br><br>
+
+			<p>Third Stop:</p>
+			<input type="time" class="inputBox" name="3rdTime" placeholder="3rd Time">
+			<input type="time" class="inputBox" name="end3rdTime" placeholder="3rd Time">
+			<input type="text" class="inputBox" name="3rdDetail" placeholder="3rd Objective">
+			<br><br>
+
+			<p>Fourth Stop:</p>
+			<input type="time" class="inputBox" name="4thTime" placeholder="4th Time">
+			<input type="time" class="inputBox" name="end4thTime" placeholder="4th Time">
+			<input type="text" class="inputBox" name="4thDetail" placeholder="4th Objective">
+			<br><br>
+
+			<p>Fifth Stop:</p>
+			<input type="time" class="inputBox" name="5thTime" placeholder="5th Time">
+			<input type="time" class="inputBox" name="end5thTime" placeholder="5th Time">
+			<input type="text" class="inputBox" name="5thDetail" placeholder="5th Objective">
+			<br><br>
+
+			<p>Sixth Stop:</p>
+			<input type="time" class="inputBox" name="6thTime" placeholder="6th Time">
+			<input type="time" class="inputBox" name="end6thTime" placeholder="6th Time">
+			<input type="text" class="inputBox" name="6thDetail" placeholder="6th Objective">
+			<br><br>
+
+			<p>Seventh Stop:</p>
+			<input type="time" class="inputBox" name="7thTime" placeholder="7th Time">
+			<input type="time" class="inputBox" name="end7thTime" placeholder="7th Time">
+			<input type="text" class="inputBox" name="7thDetail" placeholder="7th Objective">
+			<br><br>
+			
+	</div>
+	<div class="submit">
+		<div class= "textNotes">
+			<textarea id="textNotes" class="details" type="text" name="Details" placeholder= "STORAGE AND SPECIAL NOTES" cols="30" wrap="hard"></textarea>
+		</div>
+		<div class="submit-button">
+			<button id="submit" type="submit" value="SUBMIT">SUBMIT</button>
+		</div>		
+	</div>
+	<div id="total" class="total">
+		<p><span id="filename"class="column1"></span>
+			<span id="filename2"class="column2"></span></p>
+		<p><span id="date"class="column1"></span>
+			<span id="date2"class="column2"></span></p>
+		<p><span id="client"class="column1"></span>
+			<span id="client2"class="column2"></span></p>
+		<p><span id="guests"class="column1"></span>
+			<span id="guests2"class="column2"></span></p>
+		<p><span id="contact"class="column1"></span>
+			<span id="contact2"class="column2"></span></p>
+		<p><span id="tour"class="column1"></span>  
+			<span id="tour2"class="column2"></span></p>
+		<p><span id="guide"class="column1"></span>
+			<span id="guide2"class="column2"></span></p>
+		<p><span id="ADcontact"class="column1"></span>
+			<span id="ADcontact2"class="column2"></span></p>
+		<p><span id="transport" class="column1"></span>
+			<span id="transport2" class="column2"></span></p>
+		<p><span id="location"class="column1"></span>
+			<span id="location2"class="column2"></span></p>
+		<br><br><br><br>
+		<div class="tourDetails">
+			<span id="details"></span>
+			<p><span id="firstTime" class="Time"></span>
+				<span id="firstDetail" class="Detail"></span></p>
+			<p><span id="secondTime" class="Time"></span>
+				<span id="secondDetail" class="Detail"></span></p>
+			<p><span id="thirdTime" class="Time"></span>
+				<span id="thirdDetail" class="Detail"></span></p>
+			<p><span id="fourthTime" class="Time"></span>
+				<span id="fourthDetail" class="Detail"></span></p>
+			<p><span id="fifthTime" class="Time"></span>
+				<span id="fifthDetail" class="Detail"></span></p>
+			<p><span id="sixthTime" class="Time"></span>
+				<span id="sixthDetail" class="Detail"></span></p>
+			<p><span id="seventhTime" class="Time"></span>
+				<span id="seventhDetail" class="Detail"></span></p>
+		</div>
+		<div class"storage">
+			<p><span id="storage"></span></p>
+		</div>
+	</div>
+
+	</form>
+</body>
+</html>
