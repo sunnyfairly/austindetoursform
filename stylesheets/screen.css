@@ -159,7 +159,7 @@ div {
 /* line 85, ../sass/screen.scss */
 .details {
   margin-top: 20;
-  width: 375px;
+  width: 325px;
   min-height: 600px;
   font-size: 18px;
   font-weight: bold;
@@ -173,7 +173,7 @@ div {
   margin-right: 50px;
   padding: 10px;
   border: 3px solid red;
-  width: 700px;
+  width: 600px;
   min-height: 700px;
   clear: both;
   float: right;
